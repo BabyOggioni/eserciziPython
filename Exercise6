@@ -1,0 +1,24 @@
+# Exercise6
+
+# Ask the user for a string and print out whether this string is a palindrome or not. 
+# (A palindrome is a string that reads the same forwards and backwards.)
+
+mystring=input('type a string\n')
+
+x=len(mystring)
+
+
+print(x)
+  
+y=range(0,x)
+pali=True
+
+for i in y:
+  print(i)
+  if mystring[i]==mystring[x-i-1]:
+    pali=True and pali
+  else:
+    pali=False
+    
+print(pali)
+
